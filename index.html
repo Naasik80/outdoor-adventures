@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -42,25 +42,25 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#aboutjump">About</a></li>
                     <li class="active">
-                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Activities</a>
-                            <ul class="collapse list-unstyled" id="homeSubmenu">
-                                <li>
-                                    <a href="#fishjump">Fishing</a>
-                                </li>
-                                <li>
-                                    <a href="#canoejump">Canoeing</a>
-                                </li>
-                                <li>
-                                    <a href="#hikejump">Hiking</a>
-                                </li>
-                                <li>
-                                    <a href="#campjump">Camping</a>
-                                </li>
-                                <li>
-                                    <a href="#huntjump">Hunting</a>
-                                </li>
-                            </ul> 
-                        </li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Activities</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#fishjump">Fishing</a>
+                            </li>
+                            <li>
+                                <a href="#canoejump">Canoeing</a>
+                            </li>
+                            <li>
+                                <a href="#hikejump">Hiking</a>
+                            </li>
+                            <li>
+                                <a href="#campjump">Camping</a>
+                            </li>
+                            <li>
+                                <a href="#huntjump">Hunting</a>
+                            </li>
+                        </ul> 
+                    </li>
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
@@ -119,7 +119,7 @@
             <img data-aos="fade-up" class="images" src="images/download.jpg" alt="">
             <h4 data-aos="fade-up" id="fishjump">FISHING</h4>
 
-            <p data-aos="fade-up" class="water">
+            <p data-aos="fade-up" class="fish-con">
                 The Western Cape area has much to offer the keen angler. There are many spots, rock and surf, close to each other, so a fishing getaway will have many opportunities, both for a change of scene, and “luck”.<br> The most common fish found in this area are Steenbras (throughout the year) and kabeljou (in the summer,) with galjoen, elf and snoek in season. A highlight for anglers is the crayfish/rock lobster season in summer (usually November to January) when these delicacies are caught during the limited and strictly-monitored period.
             </p>
 
@@ -232,7 +232,8 @@
 
     </footer>        
     
-        <!-- java script -->
+        <!------------------------ java script------------------------------- -->
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         
@@ -242,6 +243,7 @@
         AOS.init();
         </script>
 
+        <!-- sidebar toggle -->
         <script>
             function sidebar(){
                 document.getElementById("sidebar").classList.toggle('active');

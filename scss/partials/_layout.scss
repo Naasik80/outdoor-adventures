@@ -45,51 +45,46 @@
 #linkdeco {
     text-decoration: none;
     color: white;
-
 }
-    #sidebar {
-        z-index: 10;
-        top: 4.1em;
-        position: fixed;
-        width: 20em;
-        height: 100%;
-        background-color: black;
-        left: -20em;
-        transition: all 0.3s linear;
-    }
-    #sidebar.active {
-        left: 0em;
-    }
-    
-    nav {
-        padding: 0em 0em;
-        transition: 0.5s all;
-        ul {
-            padding: 0%;
-        }
-        li {
-            list-style-type: none;
-        }
-        a {
-            display: block;
-            padding: 1em 0em 1em 1em;
-            text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-            font-family: 'Black Han Sans', sans-serif;
-            transition: 0.2s all;
-        }
-        a:hover {
-            background-color: rgb(48, 112, 48);
-            text-decoration: none;
-            color: white;
-        }
-       
-    }
+#sidebar {
+    z-index: 10;
+    top: 4.1em;
+    position: fixed;
+    width: 20em;
+    height: 100%;
+    background-color: black;
+    left: -20em;
+    transition: all 0.3s linear;
+}
+#sidebar.active {
+    left: 0em;
+}
 
-    // --------------------scroll down--------------------------------
-     
-     // --------------------scroll down--------------------------------
+nav {
+    padding: 0em 0em;
+    transition: 0.5s all;
+    ul {
+        padding: 0%;
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        display: block;
+        padding: 1em 0em 1em 1em;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Black Han Sans', sans-serif;
+        transition: 0.2s all;
+    }
+    a:hover {
+        background-color: rgb(48, 112, 48);
+        text-decoration: none;
+        color: white;
+    }   
+}
+
 #vid {
     margin-top: 4.1em;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -116,8 +111,7 @@
     }
 }
 #fish {
-    grid-area: fish;
-    
+    grid-area: fish;    
 }
 #can {
     grid-area: can;
@@ -126,7 +120,7 @@
     width: 100%;
     height: 50vh;
 }
-.water {
+.fish-con {
     width: 70%;
 }
 #campgrid {
@@ -231,7 +225,6 @@ footer {
     "hike-1 hike-2 hike-2 hike-3 hike-3"
     "hike-4 hike-4 hike-5 hike-6 hike-6"
     "hike-4 hike-4 hike-5 hike-6 hike-6";
-    
 }
 
 #hike-1 {
