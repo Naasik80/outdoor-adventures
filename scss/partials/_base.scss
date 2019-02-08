@@ -303,19 +303,19 @@ padding-bottom: 1em;
 
 
 // Colors
-$blue:#313A3D;
+$blue:rgb(128, 128, 128);
 $orange:rgb(48, 112, 48);
 $dark-orange:darken($orange, 20%);
 $grey:#B6B6B6;
 $light-grey:lighten($grey, 15%);
 
-$background:#efefef;
+$background:#504f4f;
 $field-color:#E8E9EA;
 
 #hire {
     top: 5em;
     position: relative;
-      background:rgba(255, 255, 255, 0.76);
+      background:rgb(0, 0, 0);
   margin:60px auto 120px;
   text-align:center;
       padding:50px 0 110px;
@@ -329,6 +329,7 @@ $field-color:#E8E9EA;
     font-size:4em;
     text-transform:uppercase;
     @include lato-1;
+    color: white;
   }
 
 
@@ -387,6 +388,7 @@ form {
                     color:$blue;
                     font-size: 1.4em;
                     letter-spacing: 0.05em;
+                
                     
 
                     &#msg {
@@ -394,7 +396,7 @@ form {
                         resize: none;
                         @include ease(333ms);
                     }
-
+                        
                     // Focus and JS Toggle Class
                     &:focus,
                     &.focused {
@@ -447,4 +449,3 @@ form {
                 }
         }
 }
-

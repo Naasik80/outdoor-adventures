@@ -1,0 +1,51 @@
+// @media screen and (max-width: 600px){
+//     // ================================= HOME PAGE RESPOSIVENES ==========================
+//     #contact {
+//         position: relative;
+//         font-size: 1.2em;
+//         grid-area: contact;
+//         padding: 1em;
+//         background-color: rgb(48, 112, 48);
+//     }
+//     #about {
+//         padding-bottom: 5em;
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-areas: 
+//         "abouth"
+//         "abouth"
+//         "start1"
+//         "start2";
+//     }
+//     #par1 {
+//         padding-left: 0%;
+//         width: 70%;
+//         grid-area: start1;
+//     }
+//     #par2 {
+//         padding-right: 0%;
+//         width: 70%;
+//         grid-area: start2;
+//     }
+//     #activitygrid {
+//         padding-bottom: 5em;
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: auto;
+//         grid-template-areas: 
+//         "acth"
+//         "fish"
+//         "can";
+//     }
+// }   #campgrid {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
+//     grid-template-areas: 
+//     "hike"
+//     "hikeimg"
+//     "camp"
+//     "campimg" 
+//     "hunt"
+//     "huntimg";
+//     }
