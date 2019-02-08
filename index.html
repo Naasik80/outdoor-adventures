@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link href="https://fonts.googleapis.com/css?family=Cairo:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Outdoor Adventures</title>
+</head>
+<body>
+    <header>
+        <!-- =============================== navbar starts ======================================== -->
+        <section class="navgrid" data-aos="fade-down">    
+        
+                <div class="toggle-btn" onclick= "sidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span id="menu">MENU</span>
+                <span id="contact">
+                    <a id="linkdeco" href="contact-form.html">
+                        CONTACT US
+                    </a>
+                </span>
+            
+        </section>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutjump">About</a></li>
+                    <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Activities</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="#fishjump">Fishing</a>
+                                </li>
+                                <li>
+                                    <a href="#canoejump">Canoeing</a>
+                                </li>
+                                <li>
+                                    <a href="#hikejump">Hiking</a>
+                                </li>
+                                <li>
+                                    <a href="#campjump">Camping</a>
+                                </li>
+                                <li>
+                                    <a href="#huntjump">Hunting</a>
+                                </li>
+                            </ul> 
+                        </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        
+        <!-- =============================== navbar ends ======================================== -->
+        <div id="vid">
+            <video id="bg" preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src="videos/background.mp4" type="video/mp4">
+            </video>
+            <div class="hero" data-aos="fade-down">
+                <img id="logo" src="images/Final White Badge Logo.png" alt="badge">
+                <h1 class="hero1">LIVING ON THE LAND</h1>
+                <h3>Western Cape's Outdoor Experience</h3>
+                <div data-aos="fade-down" class="mouse_scroll">
+                    <a href="#aboutjump">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="m_scroll_arrows unu"></span>
+                        <span class="m_scroll_arrows doi"></span>
+                        <span class="m_scroll_arrows trei"></span>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+         
+         
+    </header>
+    <br>
+   <article id="about">
+       <h2 data-aos="fade-up" id="aboutjump">WHY LIVE ON THE LAND?</h2>
+       <p data-aos="fade-up" id="par1">
+           When caos of the city life gets too much to handle and you need a break from dad to day traffic and nothing but the sound of technology all around you, escape into the wild and live alongside Western Capes beautiful nature and stay the night or the weekend.
+        </p>
+       <p data-aos="fade-up" id="par2">
+           Become one with nature and give yourself that break you need with many outdoor activities such as hiking, fishing, mountain climbing, canoeing, camping and hunting. So what are you waiting for. Your gateway to freedom awaits.
+        </p>
+   </article>
+   <img id="aboutimg" data-aos="fade-up" src="images/Seaside+heated+tent+and+grilling+terrace+-+Torni+Talu+Holiday+Cottages.JPG" alt="camp">
+    <section id="activitygrid">
+        <h2 data-aos="fade-up">ACTIVITIES</h2>
+            <div id="fish">
+                <img data-aos="fade-up" class="images" src="images/download.jpg" alt="">
+                <h4 data-aos="fade-up" id="fishjump">FISHING</h4>
+                <p data-aos="fade-up" class="water">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti a sed odit consequatur libero sint animi quam accusamus in omnis tempore cum perspiciatis repudiandae placeat ad optio, sit ullam.
+                </p>
+                <h3 data-aos="fade-up" class="water"><a class="readmore" href="">Read More</a></h3>
+            </div>
+            
+            <div id="can">
+                <img data-aos="fade-up" class="images" src="images/header-canoeing+kayaking.jpg" alt="">
+                <h4 data-aos="fade-up" id="canoejump">CANOEING</h4>
+                <p data-aos="fade-up" class="water">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, cumque laborum similique dicta eligendi recusandae. Commodi officia non voluptatum cum minima? Quis veritatis eaque consectetur asperiores, porro aliquid accusamus eius!
+                </p>
+                <h3 data-aos="fade-up" class="water"><a class="readmore" href="">Read More</a></h3>
+            </div>
+    </section>
+    <section id="campgrid">
+        <img class="images2" id="hikeimg" src="images/travel1.jpg" alt="">
+        <div id="hike">
+            <h4 data-aos="fade-up" id="hikejump">HIKING</h4>
+            <p data-aos="fade-up" class="water">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, non! Eos commodi temporibus hic quasi sed, ipsa sit repudiandae iure, soluta consectetur ducimus quos minus autem modi enim, illo rem?
+            </p>
+            <h3 data-aos="fade-up" class="water"><a class="readmore" href="">Read More</a></h3>
+        </div>
+        <img data-aos="fade-up" class="images2" id="campimg" src="images/Camping-camping-40779369-1920-1008.jpg" alt="">
+        <div id="camp">
+            <h4 data-aos="fade-up" id="campjump">CAMPING</h4>
+            <p data-aos="fade-up" class="water">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sint nihil? Optio, laboriosam. Tenetur quibusdam vel, dolore nulla sed et totam expedita, sint, rerum debitis perferendis. Optio, modi debitis? Deserunt!
+            </p>
+            <h3 data-aos="fade-up" class="water"><a class="readmore" href="">Read More</a></h3>
+        </div>
+        <img data-aos="fade-up" class="images2" id="huntimg" src="images/hunting-belgium-5.jpg" alt="">
+        <div id="hunt">
+            <h4 data-aos="fade-up" id="huntjump">HUNTING</h4>
+            <p data-aos="fade-up" class="water">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, facere soluta reprehenderit quaerat veritatis voluptatum! Velit corporis quia eligendi explicabo, obcaecati, voluptatibus totam ad laudantium dicta neque sunt illum. Facere?
+            </p>
+            <h3 data-aos="fade-up" class="water"><a class="readmore" href="">Read More</a></h3>
+        </div>
+        
+
+    </section>
+    <div data-aos="fade-up" id="contactinfo">
+        <div id="phone">
+        <img class="icons" src="images/tel_835977.png" alt="">
+        <p>Cellphone</p>
+        <p>
+            078 238 2314
+        </p>
+        </div>
+        <div id="mail">
+        <img class="icons" src="images/mail_1.png" alt="">
+        <p>Email</p>
+        <p>
+            nrkamish@gmail.com
+        </p>
+        </div>
+        <div id="fbook">
+        <img id="iconf" src="images/FacebookIconBlack.png" alt="">
+        <p>Facebook</p>
+        <p>
+            Follow Me @: Naasik Kamish
+        </p>
+        </div>
+        
+    </div>
+    <footer>
+        <hr>
+        <p>© 2019 Living on Land | Designed by Naasik Kamish</p>
+    </footer>        
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <script>
+        function sidebar(){
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,450 @@
+
+//--------------
+// Base styles
+//--------------
+
+//=============================== navbar styles starts ======================================== 
+html {
+    scroll-behavior: smooth;
+  }
+#logo {
+padding-bottom: 1em;
+}
+.hero1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3.5em;
+}
+
+    .hero {
+        color: white;
+        text-align: center;
+        padding-top: 5em;
+        transition-delay: 0.6s;
+         
+    }
+    h2 {
+        color: rgb(121, 121, 121);
+        padding: 2em 0em;
+        font-size: 1.7em;
+        letter-spacing: 0.3em;
+        text-align: center;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+    h3 {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 1.1em;
+    }
+    h4 {
+        color: rgb(121, 121, 121);
+        padding: 2em 0em;
+        font-size: 1.7em;
+        letter-spacing: 0.3em;
+        font-family: 'Hammersmith One', sans-serif;
+        width: 70%;
+    }
+    p {
+        font-size: 1.1em;
+        font-family: 'Cairo', sans-serif;
+    }
+    #about {
+        padding-bottom: 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "abouth abouth"
+        "start1 start2";
+        h2 {
+            grid-area: abouth;
+        }
+    }
+    #par1 {
+        padding-left: 10em;
+        width: 90%;
+        grid-area: start1;
+    }
+    #par2 {
+        padding-right: 10em;
+        width: 90%;
+        grid-area: start2;
+    }
+
+    #aboutimg {
+        width: 100%;
+        height: 90vh;
+    }
+.readmore {
+    background-color: rgb(48, 112, 48);
+    margin-top: 3em;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0.4em;
+    border: 1px solid rgb(48, 112, 48);
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all;
+}
+.readmore:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(32, 73, 32);
+    border: 1px solid rgb(32, 73, 32);
+}
+//=============================== navbar  styles ends ========================================
+  
+//=============================== hero section styles starts ========================================
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+    margin-top: 5em;
+    transition-delay: 1s;
+}
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+#formbg {
+    background-image: url(../images/kirstenbosch.jpg);
+    width: 100%;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// ==============================form===============================
+// Grid
+@mixin grid($column) {
+    width:(100% / 12) * $column;
+    margin:0 auto;
+}
+
+// Transition Ease
+@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
+    -webkit-transition: $attr $time $curve;
+    -moz-transition: $attr $time $curve;
+    -o-transition: $attr $time $curve;
+    -ms-transition: $attr $time $curve;
+    transition: $attr $time $curve;
+}
+
+//-- Lato --//
+@mixin lato-1 {font-family: 'Lato', sans-serif; font-weight:100;}
+@mixin lato-1-i {@include lato-1; font-style:italic;}
+
+@mixin lato-3 {font-family: 'Lato', sans-serif; font-weight:300;}
+@mixin lato-3-i {@include lato-3; font-style:italic;}
+
+@mixin lato-4 {font-family: 'Lato', sans-serif; font-weight:400;}
+@mixin lato-4-i {@include lato-4; font-style:italic;}
+
+@mixin lato-7 {font-family: 'Lato', sans-serif; font-weight:700;}
+@mixin lato-7-i {@include lato-7; font-style:italic;}
+
+@mixin lato-9 {font-family: 'Lato', sans-serif; font-weight:900;}
+@mixin lato-9-i {@include lato-9; font-style:italic;}
+
+
+// Colors
+$blue:#313A3D;
+$orange:rgb(48, 112, 48);
+$dark-orange:darken($orange, 20%);
+$grey:#B6B6B6;
+$light-grey:lighten($grey, 15%);
+
+$background:#efefef;
+$field-color:#E8E9EA;
+
+#hire {
+    top: 5em;
+    position: relative;
+      background:rgba(255, 255, 255, 0.76);
+  margin:60px auto 120px;
+  text-align:center;
+      padding:50px 0 110px;
+  width:80%;
+  max-width:1100px;
+  transition-delay: 0.5s;
+}
+  
+  .form-title {
+    margin-bottom:40px;
+    font-size:4em;
+    text-transform:uppercase;
+    @include lato-1;
+  }
+
+
+// Form
+form {
+    @include grid(7);
+
+        .field {
+            width:100%;
+            position:relative;
+            margin-bottom:15px;
+
+            $hover-label-width:18%;
+            $placeholder-bumper:1.5%;
+            $label-padding:18px;
+
+                // Label
+                label {
+                    text-transform: uppercase;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    background:$blue;
+                    width:100%;
+                    padding:($label-padding + 0px) 0;
+                    font-size: 1.45em;
+                    letter-spacing: 0.075em;
+
+                    @include ease(333ms);
+
+                    // Checkmark
+                    + span {
+                        font-family: 'SSStandard';
+                        opacity: 0;
+                        color:white;
+                        display: block;
+                        position:absolute;
+                        top: 12px;
+                        left: 7%;
+                        font-size: 2.5em;
+                        text-shadow:1px 2px 0 $dark-orange;
+                        
+                        @include ease(333ms);
+                    }
+                }
+
+                // Fields
+                input[type="text"],
+                textarea {
+                    border:none;
+                    background:$field-color;
+                    width:100% - $hover-label-width - $placeholder-bumper;
+                    margin:0;
+                    padding:$label-padding 0;
+                    padding-left:$hover-label-width + $placeholder-bumper;
+                    color:$blue;
+                    font-size: 1.4em;
+                    letter-spacing: 0.05em;
+                    
+
+                    &#msg {
+                        height: 3em;
+                        resize: none;
+                        @include ease(333ms);
+                    }
+
+                    // Focus and JS Toggle Class
+                    &:focus,
+                    &.focused {
+                        outline:none;
+
+                        &#msg {
+                            padding-bottom:150px;
+                        }
+
+                        + label {
+                            width:$hover-label-width;
+                            background:$orange;
+                            color:$blue;
+                        }
+                    }
+                }
+
+                // Field Hover
+                &:hover {
+                    label {
+                        width:$hover-label-width;
+                        background:$blue;
+                        color:white;
+                    }
+                }
+            }
+
+            // Submit Button
+                input[type="submit"] {
+                background:$orange;
+                color:white;
+                -webkit-appearance: none;
+                border: none;
+                text-transform: uppercase;
+                position:relative;
+                padding: 13px 50px;
+                font-size: 1.4em;
+                letter-spacing: 0.1em;
+                @include lato-3;
+                @include ease;
+
+                &:hover {
+                    background:$blue;
+                    color:$orange;
+                }
+
+                &:focus {
+                    outline:none;
+                    background:$dark-orange;
+                }
+        }
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <!-- aos -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+     <!-- google fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Cairo:600" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+     <!-- stylesheet link -->
+     <link rel="stylesheet" href="css/main.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <section class="navgrid" data-aos="fade-down">    
+    
+            <div class="toggle-btn" onclick= "sidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span id="menu">MENU</span>
+            <span id="contact">
+                <a id="linkdeco" href="index.html">
+                    HOME PAGE
+                </a>
+            </span>
+        
+    </section>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>    
+                <li>
+                    <a href="#fishjump">Fishing</a>
+                </li>
+                <li>
+                    <a href="#canoejump">Canoeing</a>
+                </li>
+                <li>
+                    <a href="#hikejump">Hiking</a>
+                </li>
+                <li>
+                    <a href="#campjump">Camping</a>
+                </li>
+                <li>
+                    <a href="#huntjump">Hunting</a>
+                </li>
+                <li><a href="contact-form.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <h2>Hiking</h2>
+        
+
+     <!-- aos -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+     AOS.init();
+     </script>
+     <!-- sidebar toggle -->
+     <script>
+         function sidebar(){
+             document.getElementById("sidebar").classList.toggle('active');
+         }
+     </script> 
+    
+</body>
+
+</html>
