@@ -1,51 +1,139 @@
-// @media screen and (max-width: 600px){
-//     // ================================= HOME PAGE RESPOSIVENES ==========================
-//     #contact {
-//         position: relative;
-//         font-size: 1.2em;
-//         grid-area: contact;
-//         padding: 1em;
-//         background-color: rgb(48, 112, 48);
-//     }
-//     #about {
-//         padding-bottom: 5em;
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         grid-template-areas: 
-//         "abouth"
-//         "abouth"
-//         "start1"
-//         "start2";
-//     }
-//     #par1 {
-//         padding-left: 0%;
-//         width: 70%;
-//         grid-area: start1;
-//     }
-//     #par2 {
-//         padding-right: 0%;
-//         width: 70%;
-//         grid-area: start2;
-//     }
-//     #activitygrid {
-//         padding-bottom: 5em;
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         grid-template-rows: auto;
-//         grid-template-areas: 
-//         "acth"
-//         "fish"
-//         "can";
-//     }
-// }   #campgrid {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: auto;
-//     grid-template-areas: 
-//     "hike"
-//     "hikeimg"
-//     "camp"
-//     "campimg" 
-//     "hunt"
-//     "huntimg";
-//     }
+// Device = Most of the Smartphones Mobiles (Portrait)
+//   Screen = B/w 320px to 479px
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    //=============================== sidebar  styles starts ========================================
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    h3 {
+        @include secondary-font;
+        font-size: 1.1em;
+    }
+    
+    h4 {
+        @include sub-heading;
+        width: 85%;
+        font-size: 1.4em;
+    }
+    
+    p {
+        font-size: 1.1em;
+        @include par-font;
+    }
+    #sidebar {
+        width: 13em;
+    }
+
+    nav {
+        a {
+            display: block;
+            padding: 0.6em 0em 0.6em 0.6em;
+            font-size: 1em;
+        }
+    }
+
+    .hero-container {    
+        padding-top: 3em;
+    }
+    #logo {
+        width: 30%;
+        height: 30%;
+    }
+    .main-title {
+        font-size: 2em;
+    }
+    .mouse_scroll {
+        margin-top: 4em;
+    }
+    #about-container {
+        padding-bottom: 5em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "about-title"
+        "1st-par"
+        "2nd-par";
+    }
+    #about-par-first {
+        padding: 0%;
+        width: 80%;
+    }
+    #about-par-second {    
+        padding: 0%;
+        width: 80%;
+    }
+    #about-img {
+        width: 100%;
+        height: 60vh;
+    }
+    #activity-container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        grid-template-areas: 
+        "act-title"
+        "act-title"
+        "fish-contain"
+        "canoe-contain"
+        !important;
+    }
+    #fishing-container {
+        padding-bottom: 5em;    
+    }
+    .content-width {
+        width: 85%;
+    }
+    #land-acts-container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        grid-template-areas: 
+        "hike-img"
+        "hike-contain"
+        "camp-img"
+        "camp-contain"
+        "hunt-img"
+        "hunt-contain"
+        !important;
+    }
+    #hike-container {
+        padding-bottom: 5em;
+    }
+    #camp-container {
+        padding-bottom: 5em;
+    }
+    #hunt-container {
+        padding-bottom: 5em !important;
+    }
+
+    .icons {
+        width: 10%;
+        margin-bottom: 0em;
+    }
+    #contactinfo {
+        padding: 5em 0em 0em 0em !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        grid-template-areas: 
+        "fbook"
+        "phone"
+        "mail"
+        !important;
+
+        p {
+            margin-bottom: 0%;
+            font-size: 1em;
+        }
+        #phone {
+            padding-bottom: 2em !important;
+        }
+        #mail {
+            padding-bottom: 2em !important;
+        }
+        #fbook {
+            padding-bottom: 2em !important;
+        }
+    }
+}    

@@ -1,0 +1,149 @@
+//===== burger nav toggle btn starts =====//
+.toggle-btn {
+    margin-left: 0%;   
+    grid-area: btn;
+    padding: 1em;
+    background-color: $green;
+}
+.toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: $white;
+    margin: 3px 0px;
+}
+//===== burger nav toggle btn ends =====//
+
+//===== hero video background //
+#vid-container {
+    margin-top: 4.1em;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+#vid-bg {
+    position: absolute;
+    min-width: 100%;
+    z-index: -1;
+}
+
+// ========= scroll down mouse icon ======== //
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+    margin-top: 5em;
+    transition-delay: 1s;
+}
+
+.m_scroll_arrows {
+    display: block;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 0 0 3px 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.arrow-1 {
+    margin-top: 1px;
+}
+
+.arrow-1, .arrow-2, .arrow-3 { 
+    animation: mouse-scroll 1s infinite; 
+}
+
+.arrow-1 {
+   
+    animation-direction: alternate;
+    animation-delay: alternate;
+}
+
+.arrow-2 { 
+    animation-delay: .2s;
+    animation-direction: alternate;
+    margin-top: -6px;
+}
+
+.arrow-3 { 
+    animation-delay: .3s;
+    animation-direction: alternate;
+    margin-top: -6px;
+}
+
+.mouse {
+    height: 42px;
+    width: 24px;
+    border-radius: 14px;
+    transform: none;
+    border: 2px solid white;
+    top: 170px;
+}
+
+.wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+    height: 4px;
+    width: 4px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.wheel {
+    animation: mouse-wheel 0.6s linear infinite;
+}
+
+@keyframes mouse-wheel {
+    0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+}
+
+@keyframes mouse-scroll {
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+}
+
+// ========= scroll down mouse icon ======== //
+
+//==== read more button ====//
+
+.readmore-btn {
+    background-color: $green;
+    margin-top: 3em;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0.4em;
+    border: 1px solid $green;
+    text-decoration: none;
+    color: $white;
+    transition: 0.5s all;
+}
+.readmore-btn:hover {
+    text-decoration: none;
+    color: $white;
+    background-color: $darkened-green;
+    border: 1px solid $darkened-green;
+}
+
+//==== read more button ====//
+
+// === footer contact icons ===//
+.icons {
+    width: 14%;
+    margin-bottom: 1em;
+}

@@ -22,8 +22,7 @@
 <body>
     <header>
         <!-- =============================== navbar starts ======================================== -->
-        <section class="navgrid" data-aos="fade-down">    
-        
+        <section class="nav-topbar" data-aos="fade-down">   
                 <div class="toggle-btn" onclick= "sidebar()">
                     <span></span>
                     <span></span>
@@ -31,7 +30,7 @@
                 </div>
                 <span id="menu">MENU</span>
                 <span id="contact">
-                    <a id="linkdeco" href="contact-form.html">
+                    <a id="link-decor" href="contact-form.html">
                         CONTACT US
                     </a>
                 </span>
@@ -66,15 +65,15 @@
             </nav>
         
         <!-- =============================== navbar ends ======================================== -->
-        <div id="vid">
-            <video id="bg" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <div id="vid-container">
+            <video id="vid-bg" preload="auto" autoplay="true" loop="loop" muted="muted">
                 <source src="videos/background.mp4" type="video/mp4">
             </video>
 
-            <div class="hero" data-aos="fade-down">
+            <div class="hero-container" data-aos="fade-down">
 
                 <img id="logo" src="images/Final White Badge Logo.png" alt="badge">
-                <h1 class="hero1">LIVING ON THE LAND</h1>
+                <h1 class="main-title">LIVING ON THE LAND</h1>
                 <h3>Western Cape's Outdoor Experience</h3>
 
                 <div data-aos="fade-down" class="mouse_scroll">
@@ -86,9 +85,9 @@
                         </div>
 
                         <div>
-                            <span class="m_scroll_arrows unu"></span>
-                            <span class="m_scroll_arrows doi"></span>
-                            <span class="m_scroll_arrows trei"></span>
+                            <span class="m_scroll_arrows arrow-1"></span>
+                            <span class="m_scroll_arrows arrow-2"></span>
+                            <span class="m_scroll_arrows arrow-3"></span>
                         </div>
                     </a>
                 </div>
@@ -100,95 +99,98 @@
 
     <br>
 
-   <article id="about">
+   <article id="about-container">
        <h2 data-aos="fade-up" id="aboutjump">WHY LIVE ON THE LAND?</h2>
-       <p data-aos="fade-up" id="par1">
+       <p data-aos="fade-up" id="about-par-first">
            When caos of the city life gets too much to handle and you need a break from dad to day traffic and nothing but the sound of technology all around you, escape into the wild and live alongside Western Capes beautiful nature and stay the night or the weekend.
         </p>
-       <p data-aos="fade-up" id="par2">
+       <p data-aos="fade-up" id="about-par-second">
            Become one with nature and give yourself that break you need with many outdoor activities such as hiking, fishing, mountain climbing, canoeing, camping and hunting. So what are you waiting for. Your gateway to freedom awaits.
         </p>
    </article>
 
-   <img id="aboutimg" data-aos="fade-up" src="images/Seaside+heated+tent+and+grilling+terrace+-+Torni+Talu+Holiday+Cottages.JPG" alt="camp">
+   <img id="about-img" data-aos="fade-up" src="images/Seaside+heated+tent+and+grilling+terrace+-+Torni+Talu+Holiday+Cottages.JPG" alt="camp">
 
-    <section id="activitygrid">
+    <section id="activity-container">
         <h2 data-aos="fade-up">ACTIVITIES</h2>
-        <div id="fish">
+        
+        <div id="fishing-container">
 
-            <img data-aos="fade-up" class="images" src="images/download.jpg" alt="">
+            <img data-aos="fade-up" class="grid1st-images" src="images/download.jpg" alt="">
             <h4 data-aos="fade-up" id="fishjump">FISHING</h4>
 
-            <p data-aos="fade-up" class="fish-con">
+            <p data-aos="fade-up" class="content-width">
                 The Western Cape area has much to offer the keen angler. There are many spots, rock and surf, close to each other, so a fishing getaway will have many opportunities, both for a change of scene, and “luck”.<br> The most common fish found in this area are Steenbras (throughout the year) and kabeljou (in the summer,) with galjoen, elf and snoek in season. A highlight for anglers is the crayfish/rock lobster season in summer (usually November to January) when these delicacies are caught during the limited and strictly-monitored period.
             </p>
 
-            <h3 data-aos="fade-up" class="fish-con"><a class="readmore" href="https://www.sa-venues.com/things-to-do/westerncape/fly-fishing-in-the-elgin-valley/">Read More</a></h3>
+            <h3 data-aos="fade-up" class="content-width"><a class="readmore-btn" href="https://www.sa-venues.com/things-to-do/westerncape/fly-fishing-in-the-elgin-valley/">Read More</a></h3>
 
         </div>
             
-        <div id="can">
+        <div id="canoe-container">
 
-            <img data-aos="fade-up" class="images" src="images/header-canoeing+kayaking.jpg" alt="">
+            <img data-aos="fade-up" class="grid1st-images" src="images/header-canoeing+kayaking.jpg" alt="">
             <h4 data-aos="fade-up" id="canoejump">CANOEING</h4>
 
-            <p data-aos="fade-up" class="fish-con">
+            <p data-aos="fade-up" class="content-width">
                 Kayaking and canoeing can be either relaxing or exhilarating, depending on the area you choose. It’s a great way to explore the Cape, allowing you to drift along the water, take in the scenery and keep a sharp eye out for wildlife and birds.<br>Kayaking in Cape Town offers an amazing opportunity to explore the lovely creatures that inhabit the deep blue waters including penguins, whales, dolphins, and dozens types of fish species from a kayak. Of course, there is an abundance of excellent places to paddle in and around Cape Town and here are our top picks.
             </p>
 
-            <h3 data-aos="fade-up" class="fish-con"><a class="readmore" href="https://www.nightjartravel.com/rafting-kayaking/western-cape">Read More</a></h3>
+            <h3 data-aos="fade-up" class="content-width"><a class="readmore-btn" href="https://www.nightjartravel.com/rafting-kayaking/western-cape">Read More</a></h3>
 
         </div>
     </section>
 
-    <section id="campgrid">
+    <section id="land-acts-container">
 
-        <img class="images2" id="hikeimg" src="images/travel1.jpg" alt="">
+        <img class="grid2nd-images" id="hike-img" src="images/travel1.jpg" alt="">
 
-        <div id="hike">
+        <div id="hike-container">
             <h4 data-aos="fade-up" id="hikejump">HIKING</h4>
 
-            <p data-aos="fade-up" class="fish-con">
+            <p data-aos="fade-up" class="content-width">
                 Without a doubt, Cape Town’s best known mountain is Table Mountain. There is a network of over 550 walks on Table Mountain alone. In a few hours, one can walk up the Platteklip Gorge, which has well-maintained stone steps to the top of the mountain.
             </p>
 
-            <h3 data-aos="fade-up" class="fish-con">
-                <a class="readmore" href="https://www.capenature.co.za/reserves/cederberg-wilderness-area/">Read More</a>
+            <h3 data-aos="fade-up" class="content-width">
+                <a class="readmore-btn" href="https://www.capenature.co.za/reserves/cederberg-wilderness-area/">Read More</a>
             </h3>
         </div>
 
-        <img data-aos="fade-up" class="images2" id="campimg" src="images/Camping-camping-40779369-1920-1008.jpg" alt="">
+        <img data-aos="fade-up" class="grid2nd-images" id="camp-img" src="images/Camping-camping-40779369-1920-1008.jpg" alt="">
 
-        <div id="camp">
+        <div id="camp-container">
 
             <h4 data-aos="fade-up" id="campjump">CAMPING</h4>
 
-            <p data-aos="fade-up" class="fish-con">
+            <p data-aos="fade-up" class="content-width">
                 Take your family and head off for a day trip. Enjoy a braai, picnic or an intimate weekend getaway. State-owned resorts and camping sites provide the perfect affordable family holiday at any time of the year.
             </p>
             
-            <h3 data-aos="fade-up" class="fish-con">
-                <a class="readmore" href="https://showme.co.za/hermanus/lifestyle/5-top-camping-sites-in-the-western-cape/">Read More</a>
+            <h3 data-aos="fade-up" class="content-width">
+                <a class="readmore-btn" href="https://showme.co.za/hermanus/lifestyle/5-top-camping-sites-in-the-western-cape/">Read More</a>
             </h3>
 
         </div>
 
-        <img data-aos="fade-up" class="images2" id="huntimg" src="images/hunting-belgium-5.jpg" alt="">
+        <img data-aos="fade-up" class="grid2nd-images" id="hunt-img" src="images/hunting-belgium-5.jpg" alt="">
 
-        <div id="hunt">
+        <div id="hunt-container">
 
             <h4 data-aos="fade-up" id="huntjump">HUNTING</h4>
 
-            <p data-aos="fade-up" class="fish-con">
+            <p data-aos="fade-up" class="content-width">
                 Hunting in the Western Cape is an experience unlike any other! We are extremely proud of our world class hunting area near Cape Town, in the Western Cape - the province is one of the country's most beautiful.
             </p>
 
-            <h3 data-aos="fade-up" class="fish-con"><a class="readmore" href="https://www.somerbysafaris.com/listing/hunting-in-the-western-cape">Read More</a></h3>
+            <h3 data-aos="fade-up" class="content-width"><a class="readmore-btn" href="https://www.somerbysafaris.com/listing/hunting-in-the-western-cape">Read More</a></h3>
 
         </div>
         
     </section>
 
+    <!-- footer section starts -->
+    
         <div data-aos="fade-up" id="contactinfo">
             <div id="phone">
                 <img class="icons" src="images/tel_835977.png" alt="">
@@ -211,7 +213,7 @@
             </div>
             
             <div id="fbook">
-                <img id="iconf" src="images/FacebookIconBlack.png" alt="">
+                <img class="icons" src="images/FacebookIconBlack.png" alt="">
                 <p>
                     Facebook
                 </p>

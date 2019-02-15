@@ -1,3 +1,19 @@
 // ===============forms==========================
 
+// Colors
+$white:rgb(255, 255, 255);
+$grey:rgb(128, 128, 128);
+$green:rgb(48, 112, 48);
+$dark-green:darken($green, 20%);
+$darkened-green:rgb(32, 73, 32);
+$light-grey:lighten($grey, 15%);
+$background:rgb(80, 79, 79);
+$field-color:rgb(232, 233, 234);
+$sub-head-color:rgb(121, 121, 121);
+
+// -- sizes --//
+$hover-label-width:18%;
+$placeholder-bumper:1.5%;
+$label-padding:18px;
+
 // ===============forms==========================

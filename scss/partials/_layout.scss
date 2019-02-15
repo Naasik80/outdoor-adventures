@@ -1,172 +1,94 @@
-* {
-    margin: 0 auto;
-}
-.navgrid {
+//===== nav topbar content grid layout //
+.nav-topbar {
     z-index: 10;
     top: 0em;
     position: fixed;
     background-color: black;
-    font-family: 'Black Han Sans', sans-serif;
+    @include main-font;
     display: grid;
     grid-template-columns: 1fr 1fr 16fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "btn menu contact";
 }
-.toggle-btn {
-    margin-left: 0%;   
-    grid-area: btn;
-    padding: 1em;
-    background-color: rgb(48, 112, 48);
-}
-.toggle-btn span {
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: white;
-    margin: 3px 0px;
-}
+
 #menu {
-    color: white;
-    position: relative;
+    @include nav-topbar;
+    color: $white;
     right: 1em;
-    font-size: 1.2em;
-    grid-area: menu;
-    padding: 1em;
+    grid-area: menu;  
 }
 #contact {
-    position: relative;
-    left: 26.5em;
-    font-size: 1.2em;
+    @include nav-topbar;
+    left: 43.2%;
     grid-area: contact;
-    padding: 1em;
-    background-color: rgb(48, 112, 48);
+    background-color: $green;
 }
-#linkdeco {
+#link-decor {
     text-decoration: none;
-    color: white;
-}
-#sidebar {
-    z-index: 10;
-    top: 4.1em;
-    position: fixed;
-    width: 20em;
-    height: 100%;
-    background-color: black;
-    left: -20em;
-    transition: all 0.3s linear;
-}
-#sidebar.active {
-    left: 0em;
+    color: $white;
 }
 
-nav {
-    padding: 0em 0em;
-    transition: 0.5s all;
-    ul {
-        padding: 0%;
-    }
-    li {
-        list-style-type: none;
-    }
-    a {
-        display: block;
-        padding: 1em 0em 1em 1em;
-        text-decoration: none;
-        color: white;
-        font-size: 1.2em;
-        font-family: 'Black Han Sans', sans-serif;
-        transition: 0.2s all;
-    }
-    a:hover {
-        background-color: rgb(48, 112, 48);
-        text-decoration: none;
-        color: white;
-    }   
-}
+//===== nav topbar content grid layout //
 
-#vid {
-    margin-top: 4.1em;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    width: 100%;
-    height: 90vh;
-    position: relative;
-    overflow: hidden;
-}
-#bg {
-    position: absolute;
-    min-width: 100%;
-    z-index: -1;
-}
-#activitygrid {
+
+//===== activity section grid layout //
+
+#activity-container {
     padding-bottom: 5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
-    "acth acth"
-    "fish can";
+    "act-title act-title"
+    "fish-contain canoe-contain";
     h2 {
-        grid-area: acth;
+        grid-area: act-title;
     }
+        
 }
-#fish {
-    grid-area: fish;    
+
+#fishing-container {
+    grid-area: fish-contain;    
 }
-#can {
-    grid-area: can;
+
+#canoe-container {
+    grid-area: canoe-contain;
 }
-.images {
-    width: 100%;
-    height: 50vh;
-}
-.fish-con {
-    width: 70%;
-}
-#campgrid {
+
+#land-acts-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
-    "hike hikeimg"
-    "campimg camp"
-    "hunt huntimg";
+    "hike-contain hike-img"
+    "camp-img camp-contain"
+    "hunt-contain hunt-img";
 }
-.images2 {
-    width: 100%;
-    height: 70vh;
+#hike-img {
+    grid-area: hike-img;
 }
-#hike {
-    background-color: black;
-    color: white;
-    grid-area: hike;
+#hike-container {
+    @include land-acts-colors;
+    grid-area: hike-contain;
 }
-#hikeimg {
-    grid-area: hikeimg;
+#camp-img {
+    grid-area: camp-img;
 }
-#camp {
-    grid-area: camp;
+#camp-container {
+    grid-area: camp-contain;
 }
-#campimg {
-    grid-area: campimg;
+#hunt-img {
+    grid-area: hunt-img;
 }
-#hunt {
-    grid-area: hunt;
-    background-color: black;
-    color: white;
+#hunt-container {
+    @include land-acts-colors;
+    grid-area: hunt-contain;
     padding-bottom: 2em;
 }
-#huntimg {
-    grid-area: huntimg;
-}
-.icons {
-    width: 14%;
-    margin-bottom: 1em;
-}
-#iconf {
-    width: 14%;
-    margin-bottom: 1.4em;
-}
+
+// ===== footer section grid layout===//
+
 #contactinfo {
     text-align: center;
     padding: 5em 4em 0em 0em;
@@ -190,8 +112,9 @@ footer {
 }
 
 // ========================gallery==================================
-#gallery-main {
-    font-family: 'Black Han Sans', sans-serif;
+
+#gallery-title {
+    @include main-font;
     text-align: center;
     padding-top: 2em;
     transition-delay: 0.5s;
@@ -199,28 +122,10 @@ footer {
 .gallery-sub {
     transition-delay: 0.8s;
 }
-.box{
-    
-    width: 100%;
-    height: 25em;
-    transition: 0.5s;
-    opacity: 0.5;
-}
-.box:hover {
-    
-    transform: scale(1.1);
-    opacity: 1;
-    z-index: 2;
-    background: none;
-    box-shadow: 2px 2px 2px #000;
-}
+
 .hiking-container {
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    height: 50em;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    @include activities-img-container;
+    transition-delay: 1s;
     grid-template-areas: 
     "hike-1 hike-2 hike-2 hike-3 hike-3"
     "hike-4 hike-4 hike-5 hike-6 hike-6"
@@ -228,59 +133,42 @@ footer {
 }
 
 #hike-1 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: left;
     background-image: url(../images/hiking1.jpg);
     grid-area: hike-1;
 }
 #hike-2 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hiking2.jpg);
     grid-area: hike-2;
 }
 #hike-3 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hiking3.jpg);
     grid-area: hike-3;
 }
 #hike-4 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hiking4.jpg);
     grid-area: hike-4;
 }
 #hike-5 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-image: url(../images/hiking5.jpg);
     grid-area: hike-5;
 }
 #hike-6 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hiking6.jpg);
     grid-area: hike-6;
 }
 .fishing-container {
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    height: 50em;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    @include activities-img-container;
     grid-template-areas: 
     "fishing-1 fishing-1 fishing-1 fishing-3 fishing-3"
     "fishing-4 fishing-5 fishing-2 fishing-3 fishing-3"
@@ -288,61 +176,44 @@ footer {
 }
     
 #fishing-1 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/fishing1.jpg);
     grid-area: fishing-1;
 }
 #fishing-2 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: right;
     background-image: url(../images/fishing4.jpg);
     grid-area: fishing-2;
 }
 #fishing-3 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/fishing3.jpg);
     grid-area: fishing-3;
 }
 #fishing-4 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/fishing2.jpg);
     grid-area: fishing-4;
 }
 #fishing-5 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: right;
     background-image: url(../images/fishing5.jpg);
     grid-area: fishing-5;
 }
 #fishing-6 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/fishing6.jpg);
     grid-area: fishing-6;
 }
 
 .canoe-container {
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    height: 50em;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    @include activities-img-container;
     grid-template-areas: 
     "canoe-1 canoe-1 canoe-3 canoe-3 canoe-5"
     "canoe-1 canoe-1 canoe-4 canoe-4 canoe-6"
@@ -350,58 +221,41 @@ footer {
 }
     
 #canoe-1 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-image: url(../images/canoe1.jpg);
     grid-area: canoe-1;
 }
 #canoe-2 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/canoe2.jpg);
     grid-area: canoe-2;
 }
 #canoe-3 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-image: url(../images/canoe3.jpg);
     grid-area: canoe-3;
 }
 #canoe-4 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: right;
     background-image: url(../images/canoe4.jpg);
     grid-area: canoe-4;
 }
 #canoe-5 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/canoe5.jpg);
     grid-area: canoe-5;
 }
 #canoe-6 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/canoe6.jpg);
     grid-area: canoe-6;
 }
 .camp-container {
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    height: 50em;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    @include activities-img-container;
     grid-template-areas: 
     "camp-1 camp-1 camp-3 camp-3 camp-6"
     "camp-2 camp-2 camp-4 camp-4 camp-6"
@@ -409,60 +263,43 @@ footer {
 }
     
 #camp-1 {
-    
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: left;
     background-image: url(../images/camp1.jpg);
     grid-area: camp-1;
 }
 #camp-2 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/camp2.jpg);
     grid-area: camp-2;
 }
 #camp-3 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/camp3.jpg);
     grid-area: camp-3;
 }
 #camp-4 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/camp5.jpg);
     grid-area: camp-4;
 }
 #camp-5 {
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/camp4.png);
     grid-area: camp-5;
 }
 #camp-6 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/camp6.jpg);
     grid-area: camp-6;
 }
 .hunt-container {
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    height: 50em;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    @include activities-img-container;
     grid-template-areas: 
     "hunt-1 hunt-2 hunt-3 hunt-5 hunt-5"
     "hunt-1 hunt-2 hunt-3 hunt-4 hunt-4"
@@ -470,48 +307,36 @@ footer {
 }
     
 #hunt-1 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: left;
     background-image: url(../images/hunt1.jpg);
     grid-area: hunt-1;
 }
 #hunt-2 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hunt2.jpg);
     grid-area: hunt-2;
 }
 #hunt-3 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hunt6.jpg);
     grid-area: hunt-3;
 }
 #hunt-4 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hunt3.jpg);
     grid-area: hunt-4;
 }
 #hunt-5 {
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-image: url(../images/hunt5.jpg);
     grid-area: hunt-5;
 }
 #hunt-6 {   
-    background-size: cover;
-    display: block;
-    background-repeat: no-repeat;
+    @include image-sizing;
     background-position: center;
     background-image: url(../images/hunt4.jpg);
     grid-area: hunt-6;

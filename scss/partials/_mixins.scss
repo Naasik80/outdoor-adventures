@@ -1,1 +1,67 @@
-// ===============forms=============
+// ================forms //
+
+// Grid
+@mixin grid($column) {
+    width:(100% / 12) * $column;
+    margin:0 auto;
+}
+
+// Transition Ease
+@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
+    transition: $attr $time $curve;
+}
+
+// ==================forms //
+
+
+//-- fonts --//
+@mixin main-font {
+    font-family: 'Black Han Sans', sans-serif;
+}
+@mixin sub-font {
+    font-family: 'Hammersmith One', sans-serif;
+}
+@mixin secondary-font {
+    font-family: 'Alegreya Sans SC', sans-serif; 
+}
+@mixin par-font {
+    font-family: 'Cairo', sans-serif;
+}
+
+// sub-headings styles
+
+@mixin sub-heading {
+    color: $sub-head-color;
+    padding: 2em 0em;
+    letter-spacing: 0.3em;
+    font-size: 1.7em;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+
+//===== nav topbar text and positioning //
+@mixin nav-topbar {
+    font-size: 1.2em;
+    padding: 1em;
+    position: relative;
+}
+
+//===== land activities color styles //
+@mixin land-acts-colors {
+    background-color: black;
+    color: $white;
+}
+// ====== Gallery =====//
+@mixin image-sizing {
+    background-size: cover;
+    display: block;
+    background-repeat: no-repeat;
+}
+@mixin activities-img-container {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 50em;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}

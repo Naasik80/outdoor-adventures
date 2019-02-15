@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <section class="navgrid" data-aos="fade-down">
+        <section class="nav-topbar" data-aos="fade-down">
 
             <div class="toggle-btn" onclick= "sidebar()">
                 <span></span>
@@ -28,7 +28,7 @@
 
             <span id="menu">MENU</span>
             <span id="contact">
-                <a id="linkdeco" href="index.html">
+                <a id="link-decor" href="index.html">
                     HOME PAGE
                 </a>
             </span>
@@ -48,29 +48,26 @@
 
     <!-- ---------------------form--------------- -->
     <div id="formbg">
-    	<section data-aos="fade-up" id="hire">
+    	<section data-aos="fade-up" id="form-container">
             <h1 id="formjump" class="form-title">Contact Me</h1>
             
             <form>
-                  <div class="field name-box">
-                        <input type="text" id="name" placeholder="Name & Surname" required/>
-                        <label for="name">Name</label>
-                        <span class="ss-icon">check</span>
-                  </div>
-                    
-                  <div class="field email-box">
-                        <input type="text" id="email" placeholder="name@email.com" required/>
-                        <label for="email">Email</label>
-                        <span class="ss-icon">check</span>
-                  </div>
+                <div class="field name-box">
+                    <input type="text" id="name" placeholder="Name & Surname" required/>
+                    <label for="name">Name</label> 
+                </div>
+                
+                <div class="field email-box">
+                    <input type="text" placeholder="name@email.com" required/>
+                    <label>Email</label>    
+                </div>
+
+                <div class="field msg-box">
+                    <textarea id="msg" rows="4" placeholder="Your message goes here..."></textarea>
+                    <label for="msg">Msg</label>
+                </div>
     
-                  <div class="field msg-box">
-                        <textarea id="msg" rows="4" placeholder="Your message goes here..."></textarea>
-                        <label for="msg">Msg</label>
-                        <span class="ss-icon">check</span>
-                  </div>
-        
-                  <input class="button" type="submit" value="Send" />
+                <input class="button" type="submit" value="Send" />
             </form>
         </section> 
     </div>
@@ -99,7 +96,7 @@
             </p>
         </div>
         <div id="fbook">
-            <img id="iconf" src="images/FacebookIconBlack.png" alt="">
+            <img class="icons" src="images/FacebookIconBlack.png" alt="">
             <p>
                 Facebook
             </p>
