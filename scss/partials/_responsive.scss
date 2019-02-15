@@ -3,12 +3,12 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    //=============================== sidebar  styles starts ========================================
+    
+    //=============================== gobal  styles starts ========================================
     
     h2 {
         font-size: 1.4em;
     }
-    
     h3 {
         @include secondary-font;
         font-size: 1.1em;
@@ -24,6 +24,19 @@
         font-size: 1.1em;
         @include par-font;
     }
+    //=============================== global  styles ends ========================================
+    
+    .nav-topbar {
+        font-size: 0.8em;
+    }
+    #menu {
+        right: 0.5em !important; 
+    }
+    #contact {
+        left: 21% !important;   
+    }
+    //=============================== sidebar  styles starts ========================================
+    
     #sidebar {
         width: 13em;
     }
@@ -35,7 +48,10 @@
             font-size: 1em;
         }
     }
-
+    //=============================== sidebar  styles ends ========================================
+    
+    //=============================== hero styles starts ========================================
+    
     .hero-container {    
         padding-top: 3em;
     }
@@ -46,9 +62,19 @@
     .main-title {
         font-size: 2em;
     }
+    #vid-container {
+        margin-top: 3.4em !important;
+        height: 70vh !important;
+    }
+    #vid-bg {
+    
+    }
+    
     .mouse_scroll {
         margin-top: 4em;
     }
+    //=============================== hero styles ends ========================================
+    
     #about-container {
         padding-bottom: 5em;
         display: grid;
@@ -67,8 +93,7 @@
         width: 80%;
     }
     #about-img {
-        width: 100%;
-        height: 60vh;
+        height: 40vh;
     }
     #activity-container {
         grid-template-columns: 1fr !important;
@@ -80,6 +105,14 @@
         "canoe-contain"
         !important;
     }
+
+    .grid1st-images {
+        height: 40vh;
+    }
+    .grid2nd-images {
+        height: 40vh;
+    }
+
     #fishing-container {
         padding-bottom: 5em;    
     }
