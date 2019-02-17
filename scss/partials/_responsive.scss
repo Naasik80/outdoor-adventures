@@ -7,7 +7,7 @@
     //=============================== gobal  styles starts ========================================
     
     h2 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
     h3 {
         @include secondary-font;
@@ -17,15 +17,15 @@
     h4 {
         @include sub-heading;
         width: 85%;
-        font-size: 1.4em;
+        font-size: 1.1em;
+        margin-bottom: 0%;
     }
     
     p {
-        font-size: 1.1em;
+        font-size: 0.9em;
         @include par-font;
     }
     //=============================== global  styles ends ========================================
-    
     .nav-topbar {
         font-size: 0.8em;
     }
@@ -35,10 +35,15 @@
     #contact {
         left: 21% !important;   
     }
+    .readmore-btn {
+        padding: 1em;
+        font-size: 0.7em;
+    }
     //=============================== sidebar  styles starts ========================================
     
     #sidebar {
-        width: 13em;
+        width: 12.5em;
+        top:3.4em;
     }
 
     nav {
@@ -67,9 +72,9 @@
         height: 70vh !important;
     }
     #vid-bg {
-    
+        left: -90%;
     }
-    
+  
     .mouse_scroll {
         margin-top: 4em;
     }
@@ -93,7 +98,7 @@
         width: 80%;
     }
     #about-img {
-        height: 40vh;
+        height: 34vh;
     }
     #activity-container {
         grid-template-columns: 1fr !important;
@@ -107,10 +112,10 @@
     }
 
     .grid1st-images {
-        height: 40vh;
+        height: 34vh;
     }
     .grid2nd-images {
-        height: 40vh;
+        height: 34vh;
     }
 
     #fishing-container {

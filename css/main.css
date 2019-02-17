@@ -345,7 +345,7 @@ form {
 
 @media (min-width: 320px) and (max-width: 480px) {
   h2 {
-    font-size: 1.4em; }
+    font-size: 1em; }
 
   h3 {
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -358,10 +358,11 @@ form {
     font-size: 1.7em;
     font-family: 'Hammersmith One', sans-serif;
     width: 85%;
-    font-size: 1.4em; }
+    font-size: 1.1em;
+    margin-bottom: 0%; }
 
   p {
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-family: 'Cairo', sans-serif; }
 
   .nav-topbar {
@@ -373,8 +374,13 @@ form {
   #contact {
     left: 21% !important; }
 
+  .readmore-btn {
+    padding: 1em;
+    font-size: 0.7em; }
+
   #sidebar {
-    width: 13em; }
+    width: 12.5em;
+    top: 3.4em; }
 
   nav a {
     display: block;
@@ -395,6 +401,9 @@ form {
     margin-top: 3.4em !important;
     height: 70vh !important; }
 
+  #vid-bg {
+    left: -90%; }
+
   .mouse_scroll {
     margin-top: 4em; }
 
@@ -413,7 +422,7 @@ form {
     width: 80%; }
 
   #about-img {
-    height: 40vh; }
+    height: 34vh; }
 
   #activity-container {
     grid-template-columns: 1fr !important;
@@ -421,10 +430,10 @@ form {
     grid-template-areas: "act-title" "act-title" "fish-contain" "canoe-contain" !important; }
 
   .grid1st-images {
-    height: 40vh; }
+    height: 34vh; }
 
   .grid2nd-images {
-    height: 40vh; }
+    height: 34vh; }
 
   #fishing-container {
     padding-bottom: 5em; }
