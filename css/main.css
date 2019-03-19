@@ -369,12 +369,6 @@ form {
     font-size: 0.8em;
     margin-bottom: 0%; }
 
-  #menu {
-    right: 0.5em !important; }
-
-  #contact {
-    left: 21% !important; }
-
   .readmore-btn {
     padding: 1em;
     font-size: 0.7em; }
@@ -477,11 +471,12 @@ form {
 .nav-topbar {
   z-index: 10;
   top: 0em;
+  width: 100%;
   position: fixed;
   background-color: black;
   font-family: 'Black Han Sans', sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr 16fr;
+  grid-template-columns: 0fr 0fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "btn menu contact"; }
 
@@ -490,14 +485,14 @@ form {
   padding: 1em;
   position: relative;
   color: white;
-  right: 1em;
   grid-area: menu; }
 
 #contact {
   font-size: 1.2em;
   padding: 1em;
   position: relative;
-  left: 43.2%;
+  margin: 0;
+  justify-self: end;
   grid-area: contact;
   background-color: #307030; }
 

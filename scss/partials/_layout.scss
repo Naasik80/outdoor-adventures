@@ -2,11 +2,12 @@
 .nav-topbar {
     z-index: 10;
     top: 0em;
+    width: 100%;
     position: fixed;
     background-color: black;
     @include main-font;
     display: grid;
-    grid-template-columns: 1fr 1fr 16fr;
+    grid-template-columns: 0fr 0fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "btn menu contact";
@@ -15,12 +16,12 @@
 #menu {
     @include nav-topbar;
     color: $white;
-    right: 1em;
     grid-area: menu;  
 }
 #contact {
     @include nav-topbar;
-    left: 43.2%;
+    margin: 0;
+    justify-self: end;
     grid-area: contact;
     background-color: $green;
 }
