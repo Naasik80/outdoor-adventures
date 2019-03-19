@@ -382,6 +382,25 @@ form {
     padding: 0.6em 0em 0.6em 0.6em;
     font-size: 1em; }
 
+  .icons {
+    width: 10%;
+    margin-bottom: 0em; }
+
+  #contactinfo {
+    padding: 5em 0em 0em 0em !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    grid-template-areas: "fbook" "phone" "mail" !important; }
+    #contactinfo p {
+      margin-bottom: 0%;
+      font-size: 1em; }
+    #contactinfo #phone {
+      padding-bottom: 2em !important; }
+    #contactinfo #mail {
+      padding-bottom: 2em !important; }
+    #contactinfo #fbook {
+      padding-bottom: 2em !important; }
+
   .hero-container {
     padding-top: 3em; }
 
@@ -450,24 +469,103 @@ form {
   #hunt-container {
     padding-bottom: 5em !important; }
 
-  .icons {
-    width: 10%;
-    margin-bottom: 0em; }
+  #formbg {
+    background-image: url(../images/kirstenbosch.jpg);
+    width: 100%;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
-  #contactinfo {
-    padding: 5em 0em 0em 0em !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto !important;
-    grid-template-areas: "fbook" "phone" "mail" !important; }
-    #contactinfo p {
-      margin-bottom: 0%;
-      font-size: 1em; }
-    #contactinfo #phone {
-      padding-bottom: 2em !important; }
-    #contactinfo #mail {
-      padding-bottom: 2em !important; }
-    #contactinfo #fbook {
-      padding-bottom: 2em !important; } }
+  #form-container {
+    top: 5em;
+    position: relative;
+    background: rgba(0, 0, 0, 0.774);
+    margin: 60px auto 120px;
+    text-align: center;
+    padding: 50px 0 110px;
+    width: 80%;
+    max-width: 1100px;
+    transition-delay: 0.5s; }
+
+  .form-title {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'Hammersmith One', sans-serif;
+    color: white; }
+
+  form {
+    width: 70% !important;
+    width: 58.3333333333%;
+    margin: 0 auto; }
+    form .field {
+      width: 100%;
+      position: relative;
+      margin-bottom: 15px; }
+      form .field label {
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: gray;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+        transition: all 333ms ease-in-out;
+        font-family: 'Cairo', sans-serif; }
+      form .field input[type="text"],
+      form .field textarea {
+        border: none;
+        background: #e8e9ea;
+        width: 80.5%;
+        margin: 0;
+        padding: 10px 0;
+        padding-left: 19.5%;
+        color: gray;
+        font-size: 0.8em;
+        letter-spacing: 0.05em;
+        font-family: 'Cairo', sans-serif; }
+        form .field input[type="text"]#msg,
+        form .field textarea#msg {
+          height: 3em;
+          resize: none;
+          transition: all 333ms ease-in-out; }
+        form .field input[type="text"]:focus, form .field input[type="text"].focused,
+        form .field textarea:focus,
+        form .field textarea.focused {
+          outline: none; }
+          form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+          form .field textarea:focus#msg,
+          form .field textarea.focused#msg {
+            padding-bottom: 150px; }
+          form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+          form .field textarea:focus + label,
+          form .field textarea.focused + label {
+            width: 26%;
+            background: #307030;
+            color: white; }
+      form .field:hover label {
+        width: 26%;
+        background: gray;
+        color: white; }
+    form input[type="submit"] {
+      background: #307030;
+      color: white;
+      border: none;
+      text-transform: uppercase;
+      position: relative;
+      padding: 13px 50px;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      font-family: 'Hammersmith One', sans-serif;
+      transition: all 333ms ease-in-out; }
+      form input[type="submit"]:hover {
+        background: gray; }
+      form input[type="submit"]:focus {
+        outline: none;
+        background: #112911; } }
 .nav-topbar {
   z-index: 10;
   top: 0em;

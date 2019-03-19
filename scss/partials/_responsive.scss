@@ -3,8 +3,8 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    
-    //=============================== gobal  styles starts ========================================
+
+    //=============================== gobal styles starts ========================================
     
     h2 {
         font-size: 1em;
@@ -25,16 +25,20 @@
         font-size: 0.9em;
         @include par-font;
     }
-    //=============================== global  styles ends ========================================
+    //=============================== global styles ends ========================================
+    
+    //=============================== topbar styles ends ========================================
     .nav-topbar {
         font-size: 0.8em;
         margin-bottom: 0%;
     }
-    
+
     .readmore-btn {
         padding: 1em;
         font-size: 0.7em;
     }
+    //=============================== topbar styles ends ========================================
+
     //=============================== sidebar  styles starts ========================================
     
     #sidebar {
@@ -51,6 +55,42 @@
     }
     //=============================== sidebar  styles ends ========================================
     
+    //=============================== footer styles starts ========================================
+
+    .icons {
+        width: 10%;
+        margin-bottom: 0em;
+    }
+    #contactinfo {
+        padding: 5em 0em 0em 0em !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        grid-template-areas: 
+        "fbook"
+        "phone"
+        "mail"
+        !important;
+
+        p {
+            margin-bottom: 0%;
+            font-size: 1em;
+        }
+        #phone {
+            padding-bottom: 2em !important;
+        }
+        #mail {
+            padding-bottom: 2em !important;
+        }
+        #fbook {
+            padding-bottom: 2em !important;
+        }
+    }
+    //=============================== footer styles ends ========================================
+
+    
+    // ****************************** HOME PAGE STYLES STARTS  ****************************** //
+
+
     //=============================== hero styles starts ========================================
     
     .hero-container {    
@@ -76,6 +116,8 @@
     }
     //=============================== hero styles ends ========================================
     
+    //=============================== about styles starts ========================================
+
     #about-container {
         padding-bottom: 5em;
         display: grid;
@@ -96,6 +138,10 @@
     #about-img {
         height: 34vh;
     }
+    //=============================== about styles ends ========================================
+
+    //=============================== activity styles starts ========================================
+
     #activity-container {
         grid-template-columns: 1fr !important;
         grid-template-rows: auto !important;
@@ -141,33 +187,146 @@
     #hunt-container {
         padding-bottom: 5em !important;
     }
+    //=============================== activity styles ends ========================================
+    
 
-    .icons {
-        width: 10%;
-        margin-bottom: 0em;
-    }
-    #contactinfo {
-        padding: 5em 0em 0em 0em !important;
-        grid-template-columns: 1fr !important;
-        grid-template-rows: auto !important;
-        grid-template-areas: 
-        "fbook"
-        "phone"
-        "mail"
-        !important;
+    // ****************************** HOME PAGE STYLES STARTS  ****************************** //
+   
 
-        p {
-            margin-bottom: 0%;
-            font-size: 1em;
+    // ****************************** CONTACT PAGE STYLES STARTS  ****************************** //
+
+    // -- sizes --//
+    $hover-label-width:18%;
+    $placeholder-bumper:1.5%;
+    $label-padding:10px;
+    
+
+    // ==============================form===============================
+
+    #formbg {
+        background-image: url(../images/kirstenbosch.jpg);
+        width: 100%;
+        height: 110vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #form-container {
+        top: 5em;
+        position: relative;
+        background:rgba(0, 0, 0, 0.774);
+        margin:60px auto 120px;
+        text-align:center;
+        padding:50px 0 110px;
+        width:80%;
+        max-width:1100px;
+        transition-delay: 0.5s;
+    }
+    
+    .form-title {
+        margin-bottom:40px;
+        font-size:1.5em;
+        text-transform:uppercase;
+        letter-spacing: 0.2em;
+        @include sub-font;
+        color: $white;
+    }
+
+
+    // Form
+    form {
+        width: 70% !important;
+        @include grid(7);
+
+        .field {
+            width:100%;
+            position:relative;
+            margin-bottom:15px;
+
+            // Label
+            label {
+                text-transform: uppercase;
+                position:absolute;
+                top:0;
+                left:0;
+                background:$grey;
+                width:100%;
+                padding:($label-padding + 0px) 0;
+                font-size: 0.8em;
+                letter-spacing: 0.2em;
+                @include ease(333ms);
+                @include par-font;
+            }
+
+            // Fields
+            input[type="text"],
+            textarea {
+                border:none;
+                background:$field-color;
+                width:100% - $hover-label-width - $placeholder-bumper;
+                margin:0;
+                padding:$label-padding 0;
+                padding-left:$hover-label-width + $placeholder-bumper;
+                color:$grey;
+                font-size: 0.8em;
+                letter-spacing: 0.05em;
+                @include par-font;
+                
+                &#msg {
+                    height: 3em;
+                    resize: none;
+                    @include ease(333ms);
+                }
+                    
+                // Focus and JS Toggle Class
+                &:focus,
+                &.focused {
+                    outline:none;
+            
+                    &#msg {
+                        padding-bottom:150px;
+                    }
+
+                    + label {
+                        width:26%;
+                        background:$green;
+                        color:$white;
+                    }
+                }
+            }
+
+            // Field Hover
+            &:hover {
+                label {
+                    width:26%;
+                    background:$grey;
+                    color:$white;
+                }
+            }
         }
-        #phone {
-            padding-bottom: 2em !important;
-        }
-        #mail {
-            padding-bottom: 2em !important;
-        }
-        #fbook {
-            padding-bottom: 2em !important;
+
+        // Submit Button
+        input[type="submit"] {
+            background:$green;
+            color:$white;
+            border: none;
+            text-transform: uppercase;
+            position:relative;
+            padding: 13px 50px;
+            font-size: 0.8em;
+            letter-spacing: 0.1em;
+            @include sub-font;
+            @include ease;
+
+            &:hover {
+                background:$grey;
+            }
+
+            &:focus {
+                outline:none;
+                background:$dark-green;
+            }
         }
     }
+
 }    
