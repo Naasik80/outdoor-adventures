@@ -565,7 +565,27 @@ form {
         background: gray; }
       form input[type="submit"]:focus {
         outline: none;
-        background: #112911; } }
+        background: #112911; }
+
+  .hiking-container {
+    display: inline-block !important;
+    height: 100% !important; }
+
+  .fishing-container {
+    display: inline-block !important;
+    height: 100% !important; }
+
+  .canoe-container {
+    display: inline-block !important;
+    height: 100% !important; }
+
+  .camp-container {
+    display: inline-block !important;
+    height: 100% !important; }
+
+  .hunt-container {
+    display: inline-block !important;
+    height: 100% !important; } }
 .nav-topbar {
   z-index: 10;
   top: 0em;
