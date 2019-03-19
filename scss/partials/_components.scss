@@ -29,6 +29,33 @@
     z-index: -1;
 }
 
+//======== back to top button styles starts ========//
+
+#totop_btn {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 170, 19, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#totop_btn:hover {
+    background-color: rgba(25, 97, 11, 0.8);
+}
+#arrow {
+    width: 2em;
+    height: 2em;
+}
+  
+//========  back to top button styles ends ======== //
+
 // ========= scroll down mouse icon ======== //
 
 .mouse_scroll {

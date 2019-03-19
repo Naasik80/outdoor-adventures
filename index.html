@@ -26,6 +26,13 @@
 </head>
 
 <body>
+
+    <!-- back to top button start --> 
+    <button onclick="topFunction()" id="totop_btn" title="Go to top">
+        <img id="arrow" src="images/top arrow.png" alt="Top">
+    </button>
+    <!-- back to top button end -->
+
     <header>
         <!-- =============================== navbar starts ======================================== -->
         <section class="nav-topbar" data-aos="fade-down">   
@@ -238,6 +245,25 @@
     </footer>        
     
         <!------------------------ java script------------------------------- -->
+
+        <!-- back to top button animation starts -->
+    <script>  
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("totop_btn").style.display = "block";
+            } else {
+            document.getElementById("totop_btn").style.display = "none";
+            }
+        }
+        
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- back to top button animation ends -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

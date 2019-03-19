@@ -23,6 +23,13 @@
 </head>
 
 <body>
+    
+    <!-- back to top button start --> 
+    <button onclick="topFunction()" id="totop_btn" title="Go to top">
+        <img id="arrow" src="images/top arrow.png" alt="Top">
+    </button>
+    <!-- back to top button end -->
+
     <header>
         <section class="nav-topbar" data-aos="fade-down">
 
@@ -118,7 +125,26 @@
     </footer>  
 
    <!------------------------ java script------------------------------- -->     
-   
+
+   <!-- back to top button animation starts -->
+   <script>  
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("totop_btn").style.display = "block";
+          } else {
+            document.getElementById("totop_btn").style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- back to top button animation ends -->
+
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

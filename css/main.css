@@ -242,6 +242,28 @@ form {
   min-width: 100%;
   z-index: -1; }
 
+#totop_btn {
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 3em;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(44, 170, 19, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px; }
+
+#totop_btn:hover {
+  background-color: rgba(25, 97, 11, 0.8); }
+
+#arrow {
+  width: 2em;
+  height: 2em; }
+
 .mouse_scroll {
   display: block;
   margin: 0 auto;
@@ -344,6 +366,28 @@ form {
   margin-bottom: 1em; }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  #totop_btn {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: 2em;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 170, 19, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px; }
+
+  #totop_btn:hover {
+    background-color: rgba(25, 97, 11, 0.8); }
+
+  #arrow {
+    width: 2em;
+    height: 2em; }
+
   h2 {
     font-size: 1em; }
 
